@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>COM.U.N.E. - Jeu de Crise Hospitalière</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>COM.U.N.E. - Simulation de Crise Hospitalière</h1>
+    <div class="plateau">
+        <div class="zone" id="urgences">Urgences</div>
+        <div class="zone" id="rea">Réanimation</div>
+        <div class="zone" id="bloc">Bloc</div>
+        <div class="zone" id="stock">Stock</div>
+        <div class="zone" id="cch">Cellule de Crise</div>
+    </div>
+    <h2>Patients</h2>
+    <div class="patients">
+        <div class="pion rouge" draggable="true">Rouge</div>
+        <div class="pion jaune" draggable="true">Jaune</div>
+        <div class="pion vert" draggable="true">Vert</div>
+        <div class="pion noir" draggable="true">Noir</div>
+    </div>
+    <button onclick="tirerEvenement()">Tirer une carte événement</button>
+    <p id="evenement"></p>
+    <script src="script.js"></script>
+</body>
+</html>
